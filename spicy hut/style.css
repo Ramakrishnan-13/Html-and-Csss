@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --yellow:#FFC54D;
+    --green:#53BF9D;
+    --red:crimson;
+    --white:whitesmoke;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(./image/pexels-jessica-lewis-creative-858094.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+    
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em ;
+    padding: 1em;
+}
+#logo{
+    flex: 3;
+    font-size: 1.5em;
+    min-width: 450px;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+    min-width: 100px;
+}
+nav a:hover{
+    color:var(--green)
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2.5em;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--yellow);
+}
+.maintext div{
+    margin: .75em;
+}
+.maintext button{
+       min-width: 60px;
+       max-width: 10vw;
+       margin-top: 2em;
+       border-radius: 10px;
+       padding: .7em;
+       background-color: var(--green);
+       color:var(--white);
+       border:1px solid var(--green);
+}
+.Menu{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    background:linear-gradient(to right,rgb(101, 99, 99),rgb(52, 51, 51));
+    color: var(--white);
+}
+#menuheading,#locheading{
+    background:linear-gradient(to right,rgb(101, 99, 99),rgb(52, 51, 51));
+    color: var(--red);
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+.Menu th{
+    color: var(--green);
+    font-size: 1.8em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.Menu tr{
+    display: flex;
+    justify-content: center;
+    margin:.8em;
+}
+.Menu td:nth-child(1){
+    flex: 1;
+    justify-self:left;
+}
+.Menu td:nth-child(2){
+   justify-self:right;
+}
+.location{
+    background:linear-gradient(to right,rgb(101, 99, 99),rgb(52, 51, 51));
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+}
+.location h2{
+    color: var(--green);
+    margin-bottom: .8em;
+}
+.location div{
+    flex: 1;
+    padding: 1em;
+    min-width: 300px;
+}
+#copyright{
+    background-color: rgb(68, 65, 65);
+    color: var(--white);
+    padding: .25em 1em;
+}
+.header a i,nav a i{
+    margin: .5em;
+}
+.socialmedia{
+    display: flex;
+    align-items: center;
+    background-color: rgb(68, 65, 65);
+}
+.socialmedia div{
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    margin: 15px 0px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.insta{
+      background:linear-gradient(to right,#d62976 ,#962fbf,#4f5bd5);
+      color:#fff
+}
+.fb{
+    background-color:rgb(6, 18, 241);
+    color: #fff;
+}
+.twit{
+    background-color: rgb(0, 102, 255);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
