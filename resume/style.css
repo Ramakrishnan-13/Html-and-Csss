@@ -1,0 +1,233 @@
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(178, 220, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+     position: relative;
+     width: 100%;
+     max-width: 700px;
+     min-width: 400px;
+     min-height: 1000px; 
+     background: #fff;
+     margin: 30px;
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+     box-shadow: 0px 10px 10px 0px rgb(0,0,0,0.1);
+}
+.container .leftcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    background: #003147;
+    padding: 20px;
+}
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom:3px solid #aca5a5;
+}
+.profile .imgbox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    }
+.profile .imgbox img{
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+}
+.profile .name{
+    color:#fff;
+    font-size: 1.5em;
+     margin-top: 10px;
+     text-transform: uppercase;
+     text-align: center;
+}
+.contact{
+    padding-top: 40px;
+}
+.leftcontainer .title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom:20px ;
+}
+.contact ul{
+    position: relative;
+}
+.contact ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+}
+.contact ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 1.2em;
+    color: #03a9f4;
+}
+.contact ul li span{
+    color: #fff;
+   font-weight: 300;
+}
+.skill{
+    padding-top: 20px;
+}
+.skill ul{
+    position: relative;
+}
+.skill ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.skill ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 1.2em;
+    color: #03a9f4;
+}
+.skill ul li .text{
+    color: #fff;
+    font-weight: 300;
+}
+.skill ul li .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(21, 21, 21);
+    margin-top: 5px;
+    display: block;
+}
+.skill ul li .percent div{
+         position: absolute;
+         height: 100%;
+         background: #fff;
+}
+.lang{
+    padding-top: 20px;
+}
+.lang ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.lang ul li .text{
+    color: #fff;
+    font-weight: 300;
+}
+.lang ul li .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(21, 21, 21);
+    margin-top: 5px;
+    display: block;
+}
+.lang ul li .percent div{
+         position: absolute;
+         height: 100%;
+         background: #fff;
+}
+.hoby{
+    padding-top: 20px;
+}
+.hoby ul{
+    position: relative;
+}
+.hoby ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.hoby ul li .text i{
+    display: inline-block;
+    width: 20px;
+    font-size:.8em;
+    color: #03a9f4;
+}
+.hoby ul li .text{
+    color: #fff;
+    font-weight: 300;
+}
+/* right */
+.container .rightcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 400px;
+    position: relative;
+    background: #ffffff;
+    padding: 40px;  
+}
+.rightcontainer .title{
+   color:#003147;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   font-weight: 600;
+   letter-spacing: 1px;  
+}
+.objective p{
+       text-align: justify;
+       text-indent: 10%;
+       margin-bottom: 20px;
+       line-height:1.4  ;
+}
+.edu .bsc,.hsc,.sslc{
+    margin-bottom: 20px;
+}
+.project{
+    margin-top: 20px;
+}
+.project p{
+    line-height: 2;
+}
+.project span{
+    color: teal;
+}
+.strength{
+    padding-top: 20px;
+}
+.strength ul{
+    position: relative;
+}
+.strength ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.strength ul li .text i{
+    display: inline-block;
+    width: 20px;
+    font-size:.8em;
+    color: teal;
+}
+.strength ul li .text{
+    font-weight: 300;
+}
